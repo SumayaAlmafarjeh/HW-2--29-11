@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: block;
+            margin: auto;
+            width:500px; 
+            padding: 35px;  
+            margin-top: 80px;
+            background-color: rgb(196, 196, 196);   
+            border-radius: 7px;
+        }
+        .form{
+            width: 100%;
+            padding: 15px ;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 0px;
+            border-radius: 5px;
+        }
+        button{
+            background-color: darkgreen;
+            color: white;
+        }
+        #Dbtn{
+            border: none;
+            width: 100px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        #dropDown{
+            display: none;
+            position: absolute;
+            background-color: lightgray;
+            border-radius: 3px;
+            width: 150px;
+            padding: 7px;
+            
+        }
+        div a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 6px;
+        }
+        .dD:hover #dropDown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="">
+        <label for="">First Name</label>
+        <input class="form" type="text" placeholder="Your name..">
+        <label for="">Last Name</label>
+        <input class="form" type="text" placeholder="Your last name..">
+        <label for="">Country</label>
+        <select class="form" name="" id="">
+            <option value="">Austrailia</option>
+            <option value="">Jordan</option>
+            <option value="">turkey</option>
+        </select>
+        <button class="form" type="submit">Submit</button>
+    </form>
+  <br> <br> <br><br><br>
+  <div class="dD">
+    <button id="Dbtn" >Dropdown</button>
+        <div id="dropDown" class="d1">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </div>
+    </div>
+        <p>this is a dropdown menu............</p>
+    <br> <br><br><br> <br><br>
+</body>
+</html>
